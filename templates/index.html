@@ -22,7 +22,7 @@
         <tbody>
             {% for nv in ds %}
             <tr>
-                <td>{{ i }}</td>
+                <td>{{ loop.index }}</td>
                 <td>{{ nv.id }}</td>
                 <td>{{ nv.ten }}</td>
                 <td>{{ nv.tuoi }}</td>
@@ -33,6 +33,8 @@
                 </td>
             </tr>
             {% endfor %}
+</tbody>
+
         </tbody>
     </table>
 
